@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jokenpo</title>
+    <script src="js/script.js"></script>
+    <script src="js/test.js"></script>
+</head>
+
+<body>
+
+    <h1> Jokenpo </h1>
+
+    <h2> Player </h2>
+
+    <p> Points : <span id="playerPoints"> </span> </p>
+    <p> Sequencia de vitória: <span id="sequencePlayer"> 0 </span> </p>
+
+    <button onclick="game.play(PEDRA)">Pedra</button>
+    <button onclick="game.play(PAPEL)">Papel</button>
+    <button onclick="game.play(TESOURA)">Tesoura</button>
+
+    <p> Escolha do Player: <span id="pickedPlayer"> </span> </p>
+
+    <hr>
+
+    <p> Vencedor da partida: <span id="winner"></span> </p>
+
+    <hr>
+
+    <h2> Machine </h2>
+
+    <p> Points = <span id="machinePoints"> </span> </p>
+    <p> Sequencia de vitória: <span id="sequenceMachine"> 0 </span> </p>
+    <p> Escolha da Maquina: <span id="pickedMachine"> </span> </p>
+
+</body>
+
+</html>

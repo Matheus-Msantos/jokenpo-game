@@ -1,0 +1,27 @@
+/* ---- FONTS ---- */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Bebas+Neue&display=swap');
+
+:root {
+    --black: #2E323D;
+    --aqua: #00FFFF;
+    --yellow: #FAE45C;
+    --white: #ffffff;
+    --grey: #585F75;
+}
+
+
+.title input {
+    color: var(--grey);
+    background: var(--black);
+    border-color: var(--aqua);
+    padding: 5px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+}
+
+.title input::placeholder {
+    text-align: center;
+    color: var(--grey);
+    font-family: 'Anton', sans-serif;
+}

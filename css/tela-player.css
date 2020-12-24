@@ -1,27 +1,22 @@
-/* ---- FONTS ---- */
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Bebas+Neue&display=swap');
+.screen-center input {
+    color: var(--grey);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    margin-top: 44px;
+    margin-bottom: 20px;
+    background: none;
+    border: 1px solid var(--aqua);
+    border-radius: 10px;
+    width: 324px;
+    height: 45px;
+    padding: 14px;
 
-:root {
-    --black: #2E323D;
-    --aqua: #00FFFF;
-    --yellow: #FAE45C;
-    --white: #ffffff;
-    --grey: #B7B7B7;
 }
 
-
-.title input {
-    color: var(--grey);
-    background: var(--black);
-    border-color: var(--aqua);
-    padding: 5px;
-    border-radius: 7px;
-    text-decoration: none;
-    font-family: 'Anton', sans-serif;
-}
-
-.title input::placeholder {
-    text-align: center;
-    color: var(--grey);
-    font-family: 'Anton', sans-serif;
+.screen-center input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    
 }

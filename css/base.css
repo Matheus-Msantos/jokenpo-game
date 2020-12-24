@@ -1,0 +1,81 @@
+/* ---- FONTS ---- */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+:root {
+    --black: #2E323D;
+    --aqua: #00FFFF;
+    --yellow: #FAE45C;
+    --white: #ffffff;
+    --grey: #B7B7B7;
+    --darkGrey: #2c2c2c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--black);
+    color: var(--aqua);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+
+}
+
+.title {
+    font-size: 96px;
+    font-family: 'Bungee Outline', cursive;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.title span {
+    color: var(--yellow);
+}
+
+.title-second {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Bungee Outline', cursive;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 41px;
+    margin-bottom: 96px;
+}
+
+.title-second span {
+    color: var(--yellow);
+}
+
+.screen-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn {
+    display: block;
+    text-align: end;
+    background: var(--aqua);
+    padding: 15px;
+    width: 324px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--black);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0px var(--yellow);
+}
+
+.btn:hover {
+    box-shadow: inset 400px 0 0 0px var(--yellow);
+    transition: 0.4s ease-in-out;
+}

@@ -1,68 +1,22 @@
-/* ---- FONTS ---- */
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
-:root {
-    --black: #2E323D;
-    --aqua: #00FFFF;
-    --yellow: #FAE45C;
-    --grey: #B7B7B7;
-    --darkGrey: #3F3F3F;
-
-}
-
-body {
-    background-color: var(--black);
-}
-
-.title {
-    color: var(--aqua);
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Bungee Outline', cursive;
-    padding-bottom: 10px;
-}
-
-.title h1 span {
-    color: var(--yellow);
-}
-
-.game {
+.screen-flex {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-}
-
-.perfil {
-    display: flex;
-    align-items: flex-end;
-}
-
-.perfil h2 {
-    margin-left: 12px;
 }
 
 .player {
     background-color: var(--darkGrey);
-    margin-right: 60px;
-    padding: 90px;
-    border-radius: 15px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: var(--aqua);
+    margin-right: 74px;
+    padding: 70px;
+    border-radius: 20px;
 }
 
 .photoPlayer {
     background: #575757;
-    border-style: solid;
-    border-width: 3px;
-    border-color: var(--aqua);
-    border-radius: 40px;
-    box-sizing: border-box;
-    width: 70px;
-    height: 70px;
+    border: 3px solid var(--aqua);
+    border-radius: 60px;
+    width: 80px;
+    height: 80px;
     background-image: url('../img/photo-player.jpg');
     background-position: left;
     background-size: cover;
@@ -71,88 +25,85 @@ body {
 
 .machine {
     background-color: var(--darkGrey);
-    margin-left: 60px;
-    padding: 90px;
-    border-radius: 15px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: var(--yellow);
+    padding: 70px;
+    border-radius: 20px;
 }
 
 .photoMachine {
     background: #575757;
-    border-style: solid;
-    border-width: 3px;
-    border-color: var(--yellow);
-    border-radius: 40px;
-    box-sizing: border-box;
-    width: 70px;
-    height: 70px;
+    border: 3px solid var(--yellow);
+    border-radius: 60px;
+    width: 80px;
+    height: 80px;
     background-image: url('../img/photo-machine.jpg');
-    background-position: center;
+    background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.perfil {
+    display: flex;
+}
+
+
 .name {
     color: var(--grey);
-    text-transform: uppercase;
-    font-family: 'Krona One', sans-serif;
     font-size: 25px;
+    margin-left: 23px;
+    margin-top: 20px;
+    
 }
 
 .points {
     color: var(--yellow);
-    font-family: 'Krona One', sans-serif;
     font-size: 12px; 
-    margin-left: 84px;
+    margin-left: 23px;
+    margin-top: 5px;
 }
 
 .sequence {
     color: var(--aqua);
-    font-family: 'Krona One', sans-serif;
     font-size: 12px;
-    margin-left: 84px;
-    margin-bottom: 75px;
+    margin-left: 23px;
+    margin-top: 5px;
+    
 
+}
+
+.pick {
+    margin-top: 60px;
 }
 
 .picked {
     display: flex;
     justify-content: center;
-    text-transform: uppercase;
-    font-family: 'Krona One', sans-serif;
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .vs {
     color: var(--yellow);
-    text-transform: uppercase;
-    font-family: 'Krona One', sans-serif;
-    font-size: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
+    font-size: 48px;
+    font-weight: 300;
 }
 
 #pickedPlayer {
     color: var(--aqua);
-    font-size: 40px;
-    
+    font-size: 48px;
+
 }
 
 #pickedMachine {
     color: var(--yellow);
-    font-size: 40px;
+    font-size: 48px;
     
 }
 
 .won {
-    color: #A560E0;
+    color: var(--yellow);
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Krona One', sans-serif;
-    font-size: 19px;
-    margin-top: 20px;
+    font-size: 24px;
+    margin-top: 30px;
 }
 
 

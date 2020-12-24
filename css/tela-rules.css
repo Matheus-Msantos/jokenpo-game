@@ -1,0 +1,23 @@
+.screen-text-center {
+    color: var(--aqua);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 35px;
+}
+
+.title-rules {
+    color: var(--yellow);
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.number{
+    color: var(--yellow);
+}
+
+.btn-rules {
+    margin-top: 40px;
+}
+

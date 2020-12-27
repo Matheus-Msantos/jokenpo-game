@@ -80,20 +80,26 @@
 .pick button {
     background: none;
     border: none;
-    padding: 10px;
-    border-radius: 10px;
+    width: 90px;
+    height: 95px;
     outline: none;
+    margin-left: 15px;
 }
 
 .pick button:hover {
-    border: 1px solid var(--yellow);
-    border-radius: 50px;
+    box-shadow: 0 0 0 1px var(--yellow);
+    border-radius: 50%;
+    transform: scale(1.2);
+}
+
+.btn-none:hover {
+    box-shadow: none !important;
+    transform: none !important;
 }
 
 .pick-img-small {
     width: 64px;
     height: 80px;
-    margin-left: 15px;
 }
 
 .picked {
@@ -124,7 +130,7 @@
 }
 
 .won {
-    color: var(--yellow);
+    color: var(--pink);
     text-align: center;
     text-transform: uppercase;
     font-size: 24px;

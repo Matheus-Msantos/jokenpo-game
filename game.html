@@ -33,9 +33,9 @@
                     </div>
                 </div>
                 <div class="pick">
-                    <button onclick="game.play(PEDRA)"> Pedra </button>
-                    <button onclick="game.play(PAPEL)"> Papel </button>
-                    <button onclick="game.play(TESOURA)"> Tesoura </button>
+                    <button onclick="game.play(PEDRA)"> <img class="pick-img-small" src="img/pedra.svg"> </button>
+                    <button onclick="game.play(PAPEL)"> <img class="pick-img-small" src="img/papel.svg"> </button>
+                    <button onclick="game.play(TESOURA)"> <img class="pick-img-small" src="img/tesoura.svg"> </button>
                 </div>
 
             </div>
@@ -50,9 +50,9 @@
                     </div>
                 </div>
                 <div class="pick">
-                    <button> Pedra </button>
-                    <button> Papel </button>
-                    <button> Tesoura </button>
+                    <button> <img class="pick-img-small" src="img/pedra.svg"> </button>
+                    <button> <img class="pick-img-small" src="img/papel.svg"> </button>
+                    <button> <img class="pick-img-small" src="img/tesoura.svg"> </button>
                 </div>
 
             </div>
@@ -61,13 +61,13 @@
 
         <div class="picked">
 
-            <span id="pickedPlayer"> </span>
+            <span class="pick-img-small" id="pickedPlayer"> </span>
             <span class="vs"> X </span>
-            <span id="pickedMachine"> </span>
+            <span class="pick-img-small" id="pickedMachine"> </span>
 
         </div>
 
-        <p class="won"> <span id="winner"></span> Won! </p>
+        <p class="won" id="result"> </p>
 
     </main>
 

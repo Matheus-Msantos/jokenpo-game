@@ -51,6 +51,12 @@ const game = {
 
         const resultadoDaJogada = game.calcResult(escolhaPlayer, escolhaMaquina);
 
+        const draw = escolhaPlayer === escolhaMaquina;
+
+        console.log('Escolha maquina', escolhaMaquina);
+        console.log('Escolha player', escolhaPlayer);
+        console.log('Resultado da jogada', resultadoDaJogada);
+
         if (resultadoDaJogada === escolhaPlayer) {
             this.gameWinner(player);
             this.sequenceWinner(player);
@@ -64,16 +70,28 @@ const game = {
             machine.points += machine.sequence;
         }
 
+        if (draw) {
+            this.gameWinner();
+        }
+
         document.querySelector('#playerPoints').textContent = player.points;
         document.querySelector('#machinePoints').textContent = machine.points;
 
         document.querySelector('#sequencePlayer').textContent = player.sequence;
         document.querySelector('#sequenceMachine').textContent = machine.sequence;
 
-        document.querySelector('#pickedPlayer').textContent = escolhaPlayer;
-        document.querySelector('#pickedMachine').textContent = escolhaMaquina;
+        document.querySelector('#pickedPlayer').innerHTML = '';
+        document.querySelector('#pickedMachine').innerHTML = '';
+
+        const imgPlayer = document.createElement('img');
+        imgPlayer.setAttribute('src', 'img/' + escolhaPlayer + '.svg');
+
+        const imgMachine = document.createElement('img');
+        imgMachine.setAttribute('src', 'img/' + escolhaMaquina + '.svg');
 
 
+        document.querySelector('#pickedPlayer').appendChild(imgPlayer);
+        document.querySelector('#pickedMachine').appendChild(imgMachine);
     },
 
     sequenceWinner(winner) {
@@ -92,12 +110,14 @@ const game = {
     },
     gameWinner(win) {
         if (win == player) {
-            document.querySelector('#winner').textContent = player.name;
+            document.querySelector('#result').textContent = player.name + ' WON!';
 
-        }
-
-        if (win == machine) {
-            document.querySelector('#winner').textContent = machine.name;
+        } else {
+            if (win == machine) {
+                document.querySelector('#result').textContent = machine.name + ' WON!';
+            } else {
+                document.querySelector('#result').textContent = 'DRAW';
+            }
         }
     }
 }

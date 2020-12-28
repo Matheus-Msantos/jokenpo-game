@@ -1,0 +1,19 @@
+.winner {
+    color: var(--yellow);
+    font-size: 35px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.option a {
+    margin-top: 30px;
+}
+
+.btn-red:hover {
+    box-shadow: inset 400px 0 0 0px var(--pink) !important;
+    transition: 0.4s ease-in-out;
+}

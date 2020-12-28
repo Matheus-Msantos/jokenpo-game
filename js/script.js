@@ -3,7 +3,7 @@ const TESOURA = 'tesoura';
 const PAPEL = 'papel';
 
 const player = {
-    name: 'Player',
+    name: localStorage.getItem('nomePlayer'),
     points: 0,
     sequence: 0,
     pickOptions(picked, options) {
@@ -89,11 +89,18 @@ const game = {
         const imgMachine = document.createElement('img');
         imgMachine.setAttribute('src', 'img/' + escolhaMaquina + '.svg');
 
-
         document.querySelector('#pickedPlayer').appendChild(imgPlayer);
         document.querySelector('#pickedMachine').appendChild(imgMachine);
-    },
 
+        if (player.points >= 15) {
+            this.gamerOver();
+
+        } else if (machine.points >= 15) {
+            this.gamerOver();
+        }
+
+
+    },
     sequenceWinner(winner) {
 
         if (winner == player) {
@@ -119,6 +126,11 @@ const game = {
                 document.querySelector('#result').textContent = 'DRAW';
             }
         }
+    },
+    gamerOver() {
+
+        window.location.href = "game-over.html";
+
     }
 }
 
@@ -131,6 +143,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     document.querySelector('#sequencePlayer').textContent = player.sequence;
     document.querySelector('#sequenceMachine').textContent = machine.sequence;
+
+    document.querySelector('#myName').textContent = player.name;
+    document.querySelector('#machineName').textContent = machine.name;
 });
-
-

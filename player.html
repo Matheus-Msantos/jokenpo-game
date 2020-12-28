@@ -5,19 +5,25 @@
     <meta charset="UTF-8">
     <title>Jokenpo</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/tela-player.css">
+
+    <!-- JS -->
+    <script src="js/player.js"></script>
+
 </head>
 
 <body>
     <div class="screen-center">
         <h1 class="title"> Jo<span>ken</span>po </h1>
 
-        <input type="text" placeholder="Your name">
+        <form onsubmit="mudaPagina(event)">
+            <input id="namePlayer" type="text" placeholder="Your name">
 
-        <div>
-            <a class="btn" href="rules.html"> Next </a>
-        </div>
+            <button id="btnSalvar" type="submit" class="btn"> Next </butotn>
+
+        </form>
 
     </div>
 

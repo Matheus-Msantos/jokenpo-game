@@ -3,7 +3,7 @@ const TESOURA = 'tesoura';
 const PAPEL = 'papel';
 
 const player = {
-    name: localStorage.getItem('nomePlayer'),
+    name: localStorage.getItem('namePlayer'),
     points: 0,
     sequence: 0,
     pickOptions(picked, options) {
@@ -43,7 +43,6 @@ const game = {
             return option2;
         }
     },
-
     play(pickedPlayer) {
 
         const escolhaMaquina = machine.pickOptions(game.options);
@@ -133,9 +132,6 @@ const game = {
 
     }
 }
-
-
-
 
 window.addEventListener('DOMContentLoaded', function () {
     document.querySelector('#playerPoints').textContent = player.points;

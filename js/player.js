@@ -1,18 +1,18 @@
 window.onload = function () {
-    let btnSalvar = document.getElementById('btnSalvar');
+    let btnSave = document.getElementById('btnSalvar');
 
-    btnSalvar.onclick = salvarnome;
+    btnSave.onclick = saveName;
 }
 
-function salvarnome() {
+function saveName() {
     let inputName = document.getElementById('namePlayer');
     var name = inputName.value;
 
-    localStorage.setItem('nomePlayer', name);
+    localStorage.setItem('namePlayer', name);
 };
 
 
-function mudaPagina(event) {
+function redirectPage(event) {
     event.preventDefault();
     window.location.assign("rules.html");
 }

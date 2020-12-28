@@ -93,9 +93,12 @@ const game = {
 
         if (player.points >= 15) {
             this.gamerOver();
+            localStorage.setItem('winner', player.name);
 
         } else if (machine.points >= 15) {
             this.gamerOver();
+            localStorage.setItem('winner', machine.name);
+
         }
 
 
